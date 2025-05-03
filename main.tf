@@ -276,7 +276,7 @@ resource "aws_lambda_function" "recognition_function" {
   handler       = "index.handler"
   runtime       = "nodejs16.x"
   timeout       = 300
-  memory_size   = 1024  # Recognition might need more memory
+  memory_size   = 1024
   
   filename      = "lambda/recognition/function.zip"
   
