@@ -1,0 +1,15 @@
+# variables.tf
+variable "aws_region" {
+  description = "AWS region to deploy resources"
+  default     = "us-east-1"
+}
+
+variable "input_bucket_name" {
+  description = "Name for the S3 bucket where images are uploaded"
+  default     = "image-processing-input-123" # Use a unique name
+}
+
+variable "output_bucket_name" {
+  description = "Name for the S3 bucket where processed results are stored"
+  default     = "image-processing-output-123" # Use a unique name
+}
