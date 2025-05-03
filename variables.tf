@@ -17,10 +17,10 @@ variable "aws_region" {
 
 variable "input_bucket_name" {
   description = "Name for the S3 bucket where images are uploaded"
-  default     = "image-processing-input-123" # Use a unique name
+  default     = "image-processing-input"
 }
 
 variable "output_bucket_name" {
   description = "Name for the S3 bucket where processed results are stored"
-  default     = "image-processing-output-123" # Use a unique name
+  default     = "image-processing-output"
 }
