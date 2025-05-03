@@ -253,7 +253,7 @@ resource "aws_lambda_function" "thumbnail_function" {
   timeout       = 300
   memory_size   = 256
   
-  filename      = "lambda/thumbnail/function.zip"  # You need to create this zip
+  filename      = "lambda/thumbnail/index.zip"
   
   environment {
     variables = {
